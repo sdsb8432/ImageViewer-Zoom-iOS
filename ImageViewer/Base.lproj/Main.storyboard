@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4sI-El-CNI"/>
+                        <viewControllerLayoutGuide type="bottom" id="1oz-sG-GwO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nWc-L6-nPk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lf4-np-ZaK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jeong" translatesAutoresizingMaskIntoConstraints="NO" id="Bjr-SL-osQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bjr-SL-osQ" secondAttribute="bottom" id="0X1-0U-gE9"/>
+                                    <constraint firstItem="Bjr-SL-osQ" firstAttribute="top" secondItem="lf4-np-ZaK" secondAttribute="top" id="iRR-oI-dll"/>
+                                    <constraint firstItem="Bjr-SL-osQ" firstAttribute="leading" secondItem="lf4-np-ZaK" secondAttribute="leading" id="ten-SC-sHs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bjr-SL-osQ" secondAttribute="trailing" id="v1P-tu-Kfx"/>
+                                </constraints>
+                            </scrollView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iJ5-rO-GIe">
+                                <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iJ5-rO-GIe" secondAttribute="height" multiplier="15:6" id="cqA-em-aK4"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1oz-sG-GwO" firstAttribute="top" secondItem="lf4-np-ZaK" secondAttribute="bottom" id="736-2X-8qV"/>
+                            <constraint firstAttribute="trailing" secondItem="iJ5-rO-GIe" secondAttribute="trailing" id="81R-zs-Ymy"/>
+                            <constraint firstItem="Bjr-SL-osQ" firstAttribute="width" secondItem="nWc-L6-nPk" secondAttribute="width" id="EJ3-xS-nkj"/>
+                            <constraint firstItem="lf4-np-ZaK" firstAttribute="leading" secondItem="nWc-L6-nPk" secondAttribute="leading" id="HGs-5g-qiH"/>
+                            <constraint firstAttribute="trailing" secondItem="lf4-np-ZaK" secondAttribute="trailing" id="O2S-SS-bv1"/>
+                            <constraint firstItem="1oz-sG-GwO" firstAttribute="top" secondItem="iJ5-rO-GIe" secondAttribute="bottom" id="i5W-R8-Tbo"/>
+                            <constraint firstItem="lf4-np-ZaK" firstAttribute="top" secondItem="nWc-L6-nPk" secondAttribute="top" id="ip9-x0-ED7"/>
+                            <constraint firstItem="Bjr-SL-osQ" firstAttribute="height" secondItem="nWc-L6-nPk" secondAttribute="height" id="qer-kZ-Hw4"/>
+                            <constraint firstItem="iJ5-rO-GIe" firstAttribute="leading" secondItem="nWc-L6-nPk" secondAttribute="leading" id="ry6-wK-jMm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Bjr-SL-osQ" id="Gby-oi-zJg"/>
+                        <outlet property="scrollView" destination="lf4-np-ZaK" id="NT5-cm-WaM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jeong" width="1024" height="683"/>
+    </resources>
+</document>
