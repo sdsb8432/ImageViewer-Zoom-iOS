@@ -12,6 +12,7 @@
 		F55096471F18857D00C9FF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55096461F18857D00C9FF61 /* Assets.xcassets */; };
 		F550964A1F18857D00C9FF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55096481F18857D00C9FF61 /* LaunchScreen.storyboard */; };
 		F55096511F18874E00C9FF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55096431F18857D00C9FF61 /* Main.storyboard */; };
+		F5DE53051F20513C00ECB5BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DE53041F20513C00ECB5BF /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F55096461F18857D00C9FF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F55096491F18857D00C9FF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F550964B1F18857D00C9FF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DE53041F20513C00ECB5BF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				F550963F1F18857D00C9FF61 /* AppDelegate.swift */,
 				F55096411F18857D00C9FF61 /* ViewController.swift */,
 				F55096431F18857D00C9FF61 /* Main.storyboard */,
+				F5DE53041F20513C00ECB5BF /* MainViewController.swift */,
 				F55096461F18857D00C9FF61 /* Assets.xcassets */,
 				F55096481F18857D00C9FF61 /* LaunchScreen.storyboard */,
 				F550964B1F18857D00C9FF61 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DE53051F20513C00ECB5BF /* MainViewController.swift in Sources */,
 				F55096421F18857D00C9FF61 /* ViewController.swift in Sources */,
 				F55096401F18857D00C9FF61 /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +306,7 @@
 				F55096501F18857D00C9FF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

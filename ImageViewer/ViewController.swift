@@ -12,6 +12,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textView: UITextView!
+    
+    var index = 0
+    var imageName: String!
+    var content: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +24,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 6.0
+        
+        imageView.image = UIImage(named: imageName)
+        textView.text = content
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,5 +37,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
+    
+    
 }
 

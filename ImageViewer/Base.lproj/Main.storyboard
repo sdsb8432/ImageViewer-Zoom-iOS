@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GVg-bM-KR9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageViewer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemController" id="BYZ-38-t0r" customClass="ViewController" customModule="ImageViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4sI-El-CNI"/>
                         <viewControllerLayoutGuide type="bottom" id="1oz-sG-GwO"/>
@@ -25,8 +25,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lf4-np-ZaK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jeong" translatesAutoresizingMaskIntoConstraints="NO" id="Bjr-SL-osQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jeong" translatesAutoresizingMaskIntoConstraints="NO" id="Bjr-SL-osQ">
+                                        <rect key="frame" x="0.0" y="-1" width="375" height="667"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -48,6 +48,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1oz-sG-GwO" firstAttribute="top" secondItem="lf4-np-ZaK" secondAttribute="bottom" id="736-2X-8qV"/>
                             <constraint firstAttribute="trailing" secondItem="iJ5-rO-GIe" secondAttribute="trailing" id="81R-zs-Ymy"/>
@@ -61,13 +62,40 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Bjr-SL-osQ" id="Gby-oi-zJg"/>
+                        <outlet property="imageView" destination="Bjr-SL-osQ" id="8hB-2e-dIl"/>
                         <outlet property="scrollView" destination="lf4-np-ZaK" id="NT5-cm-WaM"/>
+                        <outlet property="textView" destination="iJ5-rO-GIe" id="dgG-3Q-R2l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="38.23088455772114"/>
+            <point key="canvasLocation" x="1036" y="36"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="yxy-Sp-rLA">
+            <objects>
+                <viewController id="GVg-bM-KR9" customClass="MainViewController" customModule="ImageViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L9k-Vk-Tsm"/>
+                        <viewControllerLayoutGuide type="bottom" id="C4J-DD-JMr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xON-DC-ZRV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nde-j1-utf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="36"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="4xg-NN-ff7">
+            <objects>
+                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Hww-Qm-Qzt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rs5-9w-v1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="37"/>
         </scene>
     </scenes>
     <resources>
